@@ -1,0 +1,18 @@
+name: Git CTF Level 4 validation 
+
+on: [push]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Make validator executable
+        run: chmod +x validate.sh
+
+      - name: Run validation
+        run: ./validate.sh
