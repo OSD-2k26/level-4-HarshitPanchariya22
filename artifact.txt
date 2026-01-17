@@ -1,3 +1,6 @@
 correct content
+<<<<<<< HEAD
 Wring i=one time
 Wrong 3 times
+=======
+>>>>>>> parent of 58a5bf4 (Second)
